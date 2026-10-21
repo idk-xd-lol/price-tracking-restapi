@@ -39,3 +39,7 @@ async def home_page(request: Request):
                 "products": products
                 }
             )
+
+@app.get("/products/{products_url}_{products_id}")
+async def read_item(products_url, products_id):
+    return {"products_id": products_id, "products_url": products_url}

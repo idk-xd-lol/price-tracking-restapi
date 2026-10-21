@@ -61,4 +61,15 @@ a {
 .product .rating {
     color: #ffc857;
 }
+.product h2 {
+    margin: 6px 0;
+    font-size: 16px;
+    line-height: 1.2;
+    min-height: 2.4em; /* reserve space for two lines */
 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}

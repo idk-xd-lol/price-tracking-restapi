@@ -11,7 +11,7 @@
     <h2>Items count: {{ products_count }}</h2>
     <div class ="products">
       {% for id, name, img, price, rating, _rating_count, url_page in products %}
-      <a href="/{{ url_page }}">
+      <a href="products/{{ url_page }}_{{ id }}">
         <button class="product" type="button">
           <img class="icon" src="{{ img }}" alt="{{ name }}">
           <div>
